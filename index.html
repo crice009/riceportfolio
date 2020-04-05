@@ -8,6 +8,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
   html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+  .social {margin-left:15px; margin-right: 15px;}
+  #diveders{border:0; border-top:1px solid #eee; margin:20px 0;"}
 </style>
 <body class="w3-light-grey">
 
@@ -24,11 +26,11 @@
         <div class="w3-display-container">
           <img src="photo.jpg" style="width:100%" alt="Avatar">
           <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2>Corey Rice</h2>
+            <h2 style="color:white;">Corey Rice</h2>
           </div>
         </div>
         <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Teacher, Maker</p>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Teacher, Maker, Inventor</p>
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Cleveland, OH, USA</p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="mailto:crice009@gmail.com">crice009@gmail.com</a></p>
   <!--    <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>1224435534</p>  -->
@@ -62,54 +64,113 @@
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
           </div>
+          <br>
         </div>
-      </div><br>
+      </div>
+      
 
     <!-- End Left Column -->
+    <br>
     </div>
 
     <!-- Right Column -->
     <div class="w3-twothird">
     
+      <!--=========================================================================================================-->
       <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>High School Science Teacher</b>/ Mayfield City School District</h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2009 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Science Olympiad Coach</b>/ Mayfield City School District</h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2009 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Flight Leader (Thailand)</b>/ Rustic Pathways</h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience
+          <button id="work-button" class="w3-button w3-teal w3-round" style="font-size:1rem;float:right;max-width:140px;width:110px;" onclick="toggle('work')">Collapse</button>
+        </h2>
+        <div id="work" style="display:block;">
+          <div class="w3-container">
+            <hr id="dividers">
+            <img src="img/experience/mayfield.png" style="float:right;max-width:120px;">
+            <h5 class="w3-opacity"><b>High School Science Teacher</b>/ Mayfield City School District</h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2009 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+            <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          </div>
+          <div class="w3-container">
+            <hr id="dividers">
+            <hr style="border:0; border-top:1px solid #eee; margin:20px 0;">
+            <img src="img/experience/science-olympiad.png" style="float:right;max-width:140px;">
+            <h5 class="w3-opacity"><b>Science Olympiad Coach</b>/ Mayfield City School District</h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2009 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+            <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          </div>
+          <div class="w3-container">
+            <hr id="dividers">
+            <img src="img/experience/rustic.png" style="float:right;max-width:120px;">
+            <h5 class="w3-opacity"><b>Flight Leader (Thailand)</b>/ Rustic Pathways</h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2018</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+          </div>
         </div>
       </div>
 
+      <!--=========================================================================================================-->
       <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-          <p>Web Development! All I need to know in one place</p>
-          <hr>
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education
+          <button id="edu-button" class="w3-button w3-teal w3-round" style="font-size:1rem;float:right;max-width:140px;width:110px;" onclick="toggle('edu')">Collapse</button>
+        </h2>
+        <div id="edu">
+          <div class="w3-container">
+            <hr id="dividers">
+            <img src="img/edu/dom.png" style="float:right;max-width:200px;margin-left:1rem;">
+            <h5 class="w3-opacity"><b>Dominican University of California</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - 2019</h6>
+            <p>Continuing Education, focused on technical skills and science.</p>
+          </div>
+          <div class="w3-container">
+            <hr id="dividers">
+            <img src="img/edu/fab.png" style="float:right;max-width:120px;">
+            <h5 class="w3-opacity"><b>Fab Academy</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017</h6>
+            <p>Intensive program covering all aspect of digital fabrication in a Fab Lab.</p>
+          </div>
+          <div class="w3-container">
+            <hr id="dividers">
+            <img src="img/edu/ACE.png" style="float:right;max-width:120px;">
+            <h5 class="w3-opacity"><b>American College of Education</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014 - 2016</h6>
+            <p>Masters Degree: Curriculum and Instruction, focus on Differentiated Instruction</p>
+          </div>
+          <div class="w3-container">
+            <hr id="dividers">
+            <img src="img/edu/768px-Bowling_Green_State_University_seal.svg.png" style="float:right;max-width:120px;">
+            <h5 class="w3-opacity"><b>Bowling Green State University</b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2004 - 2009</h6>
+            <p>Bachelors Degree: Adolescent-Young Adult (7-12) Education, focus on Dual Science: Physical Science - Chemistry and Physics</p>
+          </div>
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>London Business School</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
-          <p>Master Degree</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>School of Coding</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
-          <p>Bachelor Degree</p><br>
+      </div>
+      <br>
+
+      <!--=========================================================================================================-->
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-code fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projects
+          <button id="project-button" class="w3-button w3-teal w3-round" style="font-size:1rem;float:right;max-width:140px;width:110px;" onclick="toggle('project')">Collapse</button>
+        </h2>
+        <div id="project" style="display:block;">
+          <div class="w3-container">
+            <img src="img/experience/mayfield.png" style="float:right;max-width:120px;">
+            <h5 class="w3-opacity"><b>High School Science Teacher</b>/ Mayfield City School District</h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2009 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+            <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <img src="img/experience/science-olympiad.png" style="float:right;max-width:140px;">
+            <h5 class="w3-opacity"><b>Science Olympiad Coach</b>/ Mayfield City School District</h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2009 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+            <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <img src="img/experience/rustic.png" style="float:right;max-width:120px;">
+            <h5 class="w3-opacity"><b>Flight Leader (Thailand)</b>/ Rustic Pathways</h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2018</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+          </div>
         </div>
       </div>
 
@@ -124,14 +185,27 @@
 
 <footer class="w3-container w3-teal w3-center w3-margin-top">
   <p>Find me on social media.</p>
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <i class="fa fa-facebook-official w3-hover-opacity social"></i>
+  <i class="fa fa-instagram w3-hover-opacity social"></i>
+  <i class="fa fa-github w3-hover-opacity social"></i>
+  <i class="fa fa-twitter w3-hover-opacity social"></i>
+  <i class="fa fa-linkedin w3-hover-opacity social"></i>
+  <p>Written by Corey, from a <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a> template and hosted by <a href="https://www.heroku.com/">Heroku</a>.</p>
 </footer>
+
+<script>
+  function toggle(id){
+    let x = document.getElementById(id);
+    let b = document.getElementById(id+"-button");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      b.innerHTML = "Collapse";
+    } else {
+      x.style.display = "none";
+      b.innerHTML = "Expand";
+    }
+  }
+</script>
 
 </body>
 </html>
